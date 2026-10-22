@@ -1,0 +1,8 @@
+url:
+https://sistema_acceso.test/?c=Auth&a=login
+
+usuario:
+admin
+
+contraseña:
+Xvito2013$

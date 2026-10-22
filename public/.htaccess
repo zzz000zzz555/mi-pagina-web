@@ -1,0 +1,6 @@
+Options -Indexes
+
+<FilesMatch "^(fix_passwords?|init_pass)\.php$">
+    Require all denied
+</FilesMatch>
+

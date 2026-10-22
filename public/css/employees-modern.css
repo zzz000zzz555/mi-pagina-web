@@ -1,0 +1,28 @@
+/* Panel de gestión estudiantil: sobrio, institucional y con profundidad sutil. */
+.employee-page{background:radial-gradient(circle at 92% 2%,rgba(45,144,173,.14),transparent 26rem),linear-gradient(135deg,#f5f8fb 0%,#eef4f7 52%,#f7f9fb 100%);min-height:100vh}
+.student-page-header{position:relative;padding:1.55rem 1.65rem;border:1px solid rgba(255,255,255,.75);border-radius:1.15rem;background:linear-gradient(115deg,#0b2945,#13516c 64%,#0d7881);box-shadow:0 18px 40px rgba(11,41,69,.22);overflow:hidden;isolation:isolate}
+.student-page-header:before,.student-page-header:after{content:"";position:absolute;border-radius:50%;pointer-events:none;z-index:-1}.student-page-header:before{width:20rem;height:20rem;right:-7rem;top:-12rem;background:radial-gradient(circle,rgba(214,171,64,.36),transparent 67%)}.student-page-header:after{width:12rem;height:12rem;right:17%;bottom:-8rem;border:1px solid rgba(255,255,255,.17)}
+.student-page-header .page-title{color:#fff!important;letter-spacing:-.035em}.student-page-header .text-muted{color:#d9e8ee!important}.student-page-header .text-primary{color:#f3d37c!important}.student-page-header .btn{box-shadow:0 7px 18px rgba(0,0,0,.16)}
+.student-page-header .btn-primary{background:#d6ab40;border-color:#d6ab40;color:#102a43;font-weight:700}.student-page-header .btn-primary:hover{background:#ecc761;border-color:#ecc761;transform:translateY(-2px)}
+.employee-page .card{border:1px solid rgba(201,215,225,.72)!important;border-radius:1rem;box-shadow:0 10px 26px rgba(33,59,83,.08)!important;transition:transform .22s ease,box-shadow .22s ease}
+.employee-page .card:hover{box-shadow:0 15px 34px rgba(33,59,83,.12)!important}.employee-page .card-header{border-radius:1rem 1rem 0 0!important;padding:1.1rem 1.35rem!important}.employee-page .card-header h2{color:#102a43;letter-spacing:-.01em}
+.employee-page .form-label{color:#486176;letter-spacing:.015em}.employee-page .form-control,.employee-page .form-select{border-color:#c7d7e1;min-height:42px;border-radius:.65rem;background:#fbfdff;transition:border-color .2s,box-shadow .2s,transform .2s}.employee-page .form-control:focus,.employee-page .form-select:focus{border-color:#0d7881;box-shadow:0 0 0 .22rem rgba(13,120,129,.13);background:#fff}.employee-page .form-control:hover,.employee-page .form-select:hover{border-color:#87adbf}
+.employee-page .btn{border-radius:.65rem;font-weight:650;letter-spacing:.005em;transition:transform .18s ease,box-shadow .18s ease,filter .18s ease}.employee-page .btn:hover{transform:translateY(-2px);box-shadow:0 7px 14px rgba(26,53,77,.16)}.employee-page .btn:active{transform:translateY(0);box-shadow:none}.employee-page .btn-dark{background:#102a43;border-color:#102a43}.employee-page .btn-success{background:#087f58;border-color:#087f58}.employee-page .btn-danger{background:#be3144;border-color:#be3144}
+.employee-page .student-bulk-bar{padding:.85rem 1rem;margin:1.25rem 0 .6rem;border-radius:.85rem;background:rgba(255,255,255,.72);border:1px solid rgba(201,215,225,.78);backdrop-filter:blur(8px)}.employee-page .student-bulk-bar small{color:#526d82!important}.employee-page #generateSelectedCards{box-shadow:0 8px 18px rgba(13,94,150,.2)}
+.employee-page .table{--bs-table-bg:transparent}.employee-page .table thead th{color:#38536a;font-size:.74rem;text-transform:uppercase;letter-spacing:.065em;background:#eef5f8;border-bottom:1px solid #d5e2e9;padding-top:1rem;padding-bottom:1rem}.employee-page .table tbody tr{transition:background-color .18s ease,transform .18s ease}.employee-page .table tbody tr:hover{background:#f1f8fa;box-shadow:inset 3px 0 #0d7881}.employee-page .table td{padding-top:.85rem;padding-bottom:.85rem;border-color:#e1e9ee}.employee-page .avatar{box-shadow:0 5px 12px rgba(16,42,67,.16);border:2px solid #fff}.employee-page .badge{font-weight:700;letter-spacing:.035em}
+@media (prefers-reduced-motion:reduce){.employee-page *{transition:none!important;animation:none!important}}
+@media(max-width:767px){.student-page-header{padding:1.25rem;border-radius:.9rem}.student-page-header .d-flex{align-items:flex-start!important}.employee-page .student-bulk-bar{align-items:flex-start!important}.employee-page .table{min-width:850px}}
+
+/* El tema nocturno mantiene contraste y profundidad sin reutilizar superficies claras. */
+html[data-theme="dark"] .employee-page{background:radial-gradient(circle at 92% 2%,rgba(18,127,142,.2),transparent 25rem),linear-gradient(135deg,#0b1420,#101c2b 58%,#0b1721)}
+html[data-theme="dark"] .employee-page .card{background:#162434!important;border-color:#294154!important;box-shadow:0 12px 28px rgba(0,0,0,.28)!important}
+html[data-theme="dark"] .employee-page .card-header{background:#162434!important;color:#e6eef5!important;border-color:#294154!important}
+html[data-theme="dark"] .employee-page .card-header h2{color:#edf5fa!important}
+html[data-theme="dark"] .employee-page .form-label{color:#b7c8d6}
+html[data-theme="dark"] .employee-page .form-control,html[data-theme="dark"] .employee-page .form-select{background:#0e1a28;color:#edf5fa;border-color:#38566a}
+html[data-theme="dark"] .employee-page .form-control:hover,html[data-theme="dark"] .employee-page .form-select:hover{border-color:#6394a9}
+html[data-theme="dark"] .employee-page .student-bulk-bar{background:rgba(22,36,52,.88);border-color:#294154}
+html[data-theme="dark"] .employee-page .student-bulk-bar small{color:#bdcdd8!important}
+html[data-theme="dark"] .employee-page .table thead th{color:#c5d8e5;background:#1d3144;border-color:#345064}
+html[data-theme="dark"] .employee-page .table tbody tr:hover{background:#1b3040;box-shadow:inset 3px 0 #22b6bd}
+html[data-theme="dark"] .employee-page .table td{border-color:#294154}
